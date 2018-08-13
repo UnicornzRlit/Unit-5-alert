@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Unit 5 Schedule Alert</title>
+</head>
+<body>
+
+<h1>This will remind us when class is ending in 5 minutes</h1>
+    <p></p>
+   <style>
+    
+    </style> 
+    
+    
+    
+    
+    <script>
+    
+        
+        var min = 1000 * 31;
+        setInterval(hi,min);
+        function hi(){
+            var endTimes = ['9:27', '10:16', '11:05', '11:54', '12:24','12:24', '1:13', '2:02', '2:51', '3:40'];
+        //window.open('externalfile:drive-ae3b1618e8d089c9db4be4289dc5cbf2797cfae6/root/CodeQuest/UNIT5/warning.html');
+            var d=new Date();
+            var hours = d.getHours();
+            var min = d.getMinutes();
+        var ourTime = hours + ':'+ min;
+            for (var index = 0; index < endTimes.length; index++){
+            if(endTimes[index]=== ourTime){
+                window.open('externalfile:drive-ae3b1618e8d089c9db4be4289dc5cbf2797cfae6/root/CodeQuest/UNIT5/warning.html');
+            }
+            }
+            //alert(hours + ':'+ min);
+            
+        
+    
+        }
+    
+    
+    
+    
+    
+    </script>
+
+</body>
+</html>
